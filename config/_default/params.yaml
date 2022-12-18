@@ -28,10 +28,10 @@ darkmode: true
 
 # 站点基本信息
 # Site Information Settings
-author: NexT 主题
-subtitle: 为 Hugo 打造的主题
-description: 保持简单的易用性和强大的功能。
-keywords: Hugo,NexT,主题,简单,强大
+author: Rockefeller
+subtitle: 并非所有流浪者都迷失了自我。
+description: 我预见了这一刻。
+keywords: iOS开发,Python,数据结构和算法,人工智能,Web3.0
 
 # 不同尺寸站点图标
 # Different size of favicon
@@ -134,7 +134,7 @@ sidebar:
 avatar:
   # 设置显示头像的相对路径
   # Replace the default image and set the url here.
-  url: /imgs/hugo_next_avatar.png
+  url: /imgs/hugo_next_avatar.jpg
   # 开启头像的圆形显示效果
   # If true, the avatar will be displayed in circle.
   rounded: true
@@ -162,9 +162,10 @@ siteState:
 # Key is the link label order.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 socials: 
-  social0: Github || https://github.com/elkan1788 || fab fa-github
+  social0: Github || https://github.com/DeftMKJ || fab fa-github
+  social1: CSDN || https://blog.csdn.net/Deft_MKJing || fab fa-keycdn
   #social1: E-Mail || mailto:yourname@gmail.com || fa fa-envelope
-  social2: 知乎 || https://www.zhihu.com/people/lisenhui || fa fa-book
+  #social2: 知乎 || https://www.zhihu.com/people/lisenhui || fa fa-book
   #Google: https://plus.google.com/yourname || fab fa-google
   #Twitter: https://twitter.com/yourname || fab fa-twitter
   #FB Page: https://www.facebook.com/yourname || fab fa-facebook
@@ -205,8 +206,8 @@ linksSets:
 # Links of your friends
 # Usage: `Key: name || permalink`
 links: 
-  link0: Hugo-NexT || https://gitee.com/hugo-next/hugo-theme-next
-  link1: 凡梦星尘空间站 || https://lisenhui.cn
+  #link0: Hugo-NexT || https://gitee.com/hugo-next/hugo-theme-next
+  #link1: 凡梦星尘空间站 || https://lisenhui.cn
 
 # 文章目录显示
 # Table of Contents in the Sidebar
@@ -240,7 +241,7 @@ footer:
   # 站点开始年份，默认为当下时间的年份
   # Specify the year when the site was setup. 
   # If not defined, current year will be used.
-  since: 2010
+  since: 2022
 
   # 年份和版权信息之间的图标
   # Icon between year and copyright info.
@@ -267,7 +268,7 @@ footer:
   # Beian ICP and gongan information for Chinese users. 
   # See: https://beian.miit.gov.cn, http://www.beian.gov.cn
   beian:
-    enable: true
+    enable: false
     # ICP 备案的具体信息
     icp: 粤ICP备 18047355-1 号
     # 公安网备的省份简称
@@ -278,7 +279,7 @@ footer:
   # 站点支持供应商列表
   # Vendors list who support website. 
   vendors:
-    enable: true
+    enable: false
     # 支持说明
     # Some support information description.
     title: 提供CDN/云资源支持
@@ -344,7 +345,7 @@ rewardSets:
   # 是否开启捐赠按钮，开启后将在每个文章页面底部显示
   # If true, a donate button will be displayed 
   # in every article by default.
-  enable: true
+  enable: false
   # 是否开启捐赠方式的动画效果
   # If true, the donate type title will with animation.
   animation: true
@@ -368,14 +369,14 @@ rewardSets:
 followMe:
   #channel0: Twitter || https://twitter.com/username || fab fa-twitter
   #channel1: Telegram || https://t.me/channel_name || fab fa-telegram
-  channel2: WeChat || /images/wechat_channel.jpg || fab fa-weixin
-  channel3: RSS || /atom.xml || fa fa-rss
+  #channel2: WeChat || /images/wechat_channel.jpg || fab fa-weixin
+  #channel3: RSS || /atom.xml || fa fa-rss
 
 # 文章的在线编辑
 # Post edit
 # Easily browse and edit blog source code online.
 postEdit:
-  enable: true
+  enable: false
   url: https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name/
 
 
@@ -455,7 +456,7 @@ readingProgress:
 bookmark:
   # 开启书签功能
   # If true, will display bookmark in all page.
-  enable: true
+  enable: false
   # 自定义书签显示颜色
   # Customize the color of the bookmark.
   color: "#222"
@@ -471,7 +472,7 @@ bookmark:
 githubBanner:
   # 是否开启显示
   # If true, will display banner.
-  enable: true
+  enable: false
   # 你的 Github 仓库地址
   # Your repository url on Github.
   permalink: https://github.com/hugo-next
@@ -647,11 +648,11 @@ comments:
     - name: waline
       title: Waline
       color: "#27ae60"
-      weight: 2
+      weight: 1
     - name: giscus
       title: Giscus
       color: "#886ce4"
-      weight: 1
+      weight: 2
 
 # Waline 评论插件
 # 更多配置信息请参考：https://waline.js.org/
@@ -667,11 +668,11 @@ waline:
   wordLimit: 200
   requiredMeta: ['nick', 'mail']
   reaction: true
-  reactionText: [ '点赞', '踩一下', '得意', '不屑', '尴尬', '睡觉']
-  reactionTitle: "你认为这篇文章怎么样？"
+  reactionText: [ '点赞', '踩一下', '得意', '不屑', '啊这', '睡觉']
+  reactionTitle: "心情如何？"
   # 请注意换成个人的 Waline Server 服务器地址
   # Please replace this with your waline server URL
-  serverURL: https://walinejs.comment.lithub.cc
+  serverURL: https://mkj-blog-eight.vercel.app
 
 # Artalk 评论插件
 # 更多配置信息请参考：https://artalk.js.org
@@ -774,7 +775,7 @@ analytics:
   # 更多信息请参考：https://invite.51.la/1NUfGTS1?target=V6
   # 51La Analytics
   # See: https://invite.51.la/1NUfGTS1?target=V6 
-  #laId: #<anaytics_id> 
+  # laId: JudKQKON6uR61OnS
   # 百度统计
   # Baidu Analytics
   #baidu: #<anaytics_id>
@@ -844,7 +845,7 @@ chat:
 # Gitter Support
 # For more information: https://gitter.im
 gitter:
-  enable: true
+  enable: false
   room: hugo-next/community
 
 
